@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: cda-ws-app
+  name: cda-ws
+spec:
+  selector:
+    app: cda-ws
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: 80
